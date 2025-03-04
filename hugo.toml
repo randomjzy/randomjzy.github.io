@@ -1,13 +1,13 @@
-baseURL = 'https://yourusername.github.io/'
-languageCode = 'zh-cn'
-title = '我的博客'
-theme = 'PaperMod'
+baseURL = "https://randomjzy.github.io/"
+languageCode = "zh-cn"
+title = "光影日志"
+theme = "stack"
 
 [params]
   env = "production"
-  title = "我的博客"
+  title = "光影日志"
   description = "个人技术博客"
-  keywords = [Blog, Portfolio, PaperMod]
+  keywords = ["Blog", "Portfolio", "Stack"]
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowShareButtons = true
@@ -19,7 +19,6 @@ theme = 'PaperMod'
   UseHugoToc = true
   disableSpecial1stPost = false
   disableScrollToTop = false
-  comments = true
   hidemeta = false
   hideSummary = false
   showtoc = true
@@ -31,26 +30,67 @@ theme = 'PaperMod'
 
 [params.profileMode]
   enabled = true
-  title = "我的博客"
+  title = "光影日志"
   subtitle = "技术分享与生活记录"
-  imageUrl = "https://avatars.githubusercontent.com/u/your-avatar"
+  imageUrl = "https://avatars.githubusercontent.com/u/82503095"
   imageTitle = "我的头像"
-  imageLink = "https://github.com/yourusername"
+  imageLink = "https://github.com/randomjzy"
 
-[params.socialIcons]
-  - name = "github"
-    url = "https://github.com/yourusername"
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/randomjzy"
 
-[menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "首页"
-    url = "/"
-    weight = -100
-    pre = "home"
-  [[menu.main]]
-    identifier = "posts"
-    name = "文章"
-    url = "/posts/"
-    weight = -90
-    pre = "file-text"
+[[menu.main]]
+  identifier = "home"
+  name = "首页"
+  url = "/"
+  weight = -100
+  [menu.main.params]
+    icon = "home"
+
+[[menu.main]]
+  identifier = "posts"
+  name = "文章"
+  url = "/posts/"
+  weight = -90
+  [menu.main.params]
+    icon = "archives"
+
+[params.footer]
+  since = 2024
+  customText = ""
+
+[params.sidebar]
+  emoji = "🍥"
+  subtitle = "技术分享与生活记录"
+
+[params.sidebar.avatar]
+  enabled = true
+  local = false
+  src = "https://avatars.githubusercontent.com/u/your-avatar"
+
+[params.sidebar.bio]
+  enabled = true
+  name = "光影日志"
+  subtitle = "技术分享与生活记录"
+  location = "中国"
+
+[[params.sidebar.socialLinks]]
+  name = "github"
+  icon = "brand-github"
+  url = "https://github.com/randomjzy"
+
+[[params.sidebar.menuLinks]]
+  name = "首页"
+  icon = "home"
+  url = "/"
+  weight = -100
+
+[[params.sidebar.menuLinks]]
+  name = "文章"
+  icon = "archives"
+  url = "/posts/"
+  weight = -90
+
+[params.comments]
+  enabled = false
