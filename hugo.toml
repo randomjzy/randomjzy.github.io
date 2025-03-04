@@ -1,0 +1,56 @@
+baseURL = 'https://yourusername.github.io/'
+languageCode = 'zh-cn'
+title = '我的博客'
+theme = 'PaperMod'
+
+[params]
+  env = "production"
+  title = "我的博客"
+  description = "个人技术博客"
+  keywords = [Blog, Portfolio, PaperMod]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = true
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+
+[params.homeInfoParams]
+  Title = "欢迎来到我的博客 👋"
+  Content = "这里是我分享技术和生活的地方"
+
+[params.profileMode]
+  enabled = true
+  title = "我的博客"
+  subtitle = "技术分享与生活记录"
+  imageUrl = "https://avatars.githubusercontent.com/u/your-avatar"
+  imageTitle = "我的头像"
+  imageLink = "https://github.com/yourusername"
+
+[params.socialIcons]
+  - name = "github"
+    url = "https://github.com/yourusername"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = -100
+    pre = "home"
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = -90
+    pre = "file-text"
